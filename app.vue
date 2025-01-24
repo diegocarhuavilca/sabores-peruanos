@@ -3,9 +3,11 @@ await useConfigureI18n()
 </script>
 
 <template>
-  <div>
-    <AppHeader />
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+  <div class="max-w-7xl mx-auto ">
+    <NuxtLayout>
+      <AppHeader />
+      <NuxtPage />
+      <AppFooter />
+    </NuxtLayout>
   </div>
 </template>
